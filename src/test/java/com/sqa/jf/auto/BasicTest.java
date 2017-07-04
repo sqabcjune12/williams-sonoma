@@ -1,4 +1,4 @@
-package com.sqa.jf.adactin;
+package com.sqa.jf.auto;
 
 import java.util.concurrent.*;
 
@@ -6,8 +6,6 @@ import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.ie.*;
 import org.testng.annotations.*;
-
-import com.sqa.jf.auto.*;
 
 public class BasicTest extends Core {
 

@@ -7,7 +7,7 @@
  */
 package com.sqa.jf.helpers;
 
-import com.sqa.jf.adactin.*;
+import com.sqa.jf.auto.*;
 
 /**
  * AbstractLoginTest //ADDD (description of class)
