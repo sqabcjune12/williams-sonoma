@@ -9,8 +9,6 @@ package com.sqa.jf.auto;
 
 import org.openqa.selenium.support.*;
 
-import com.sqa.jf.adactin.*;
-
 /**
  * BasicPage //ADDD (description of class)
  * <p>

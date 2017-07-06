@@ -1,4 +1,4 @@
-package com.sqa.jf.adactin;
+package com.sqa.jf.auto;
 
 import java.util.concurrent.*;
 
