@@ -7,6 +7,8 @@
  */
 package com.sqa.jf.helpers;
 
+import org.testng.annotations.*;
+
 import com.sqa.jf.auto.*;
 
 /**
@@ -29,4 +31,14 @@ public abstract class AbstractLoginTest extends BasicTest {
 	abstract public void login(String username, String password);
 
 	abstract public void logout();
+
+	@BeforeClass
+	public void setupLogin() {
+		login(getProp("username"), getProp("password"));
+	}
+
+	@AfterClass
+	public void setupLogout() {
+		logout();
+	}
 }

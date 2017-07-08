@@ -7,8 +7,6 @@ import org.openqa.selenium.firefox.*;
 import org.openqa.selenium.ie.*;
 import org.testng.annotations.*;
 
-import com.sqa.jf.auto.*;
-
 public class BasicTest extends Core {
 
 	public BasicTest(String baseUrl) {
@@ -26,8 +24,6 @@ public class BasicTest extends Core {
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		// Maximize the window
 		getDriver().manage().window().maximize();
-		// Goto Base URL
-		getDriver().get(getBaseURL());
 	}
 
 	@BeforeClass(enabled = false)
@@ -39,8 +35,6 @@ public class BasicTest extends Core {
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		// Maximize the window
 		getDriver().manage().window().maximize();
-		// Goto Base URL
-		getDriver().get(getBaseURL());
 	}
 
 	@BeforeClass(enabled = false)
@@ -54,6 +48,10 @@ public class BasicTest extends Core {
 		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		// Maximize the window
 		getDriver().manage().window().maximize();
+	}
+
+	@BeforeMethod()
+	public void setupTest() {
 		// Goto Base URL
 		getDriver().get(getBaseURL());
 	}
