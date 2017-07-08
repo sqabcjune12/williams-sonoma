@@ -5,7 +5,7 @@
  * Instructor: Jean-francois Nepton<br>
  * Created: Jun 28, 2017
  */
-package com.sqa.jf.auto;
+package com.sqa.jf.helpers;
 
 import java.io.*;
 import java.util.*;
